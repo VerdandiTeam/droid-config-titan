@@ -1,0 +1,21 @@
+[Unit]
+Description=pds
+After=system.mount
+Before=droid-hal-init.service
+DefaultDependencies=no
+# Lets not do Requires= here as that means that this service will restart which leads automatically
+# to broken state as android init can be only started once per boot. If something goes wrong
+# our best hope is that android init doesn't notice that and that the crashing party fixes itself :)
+ 
+[Service]
+Type=notify
+NotifyAccess=all
+ExecStart=/bin/sh /usr/bin/droid/mount_pds.sh
+#Restart=always
+# Lets make sure we don't block minutes in case of errors.
+TimeoutSec=15
+#StartLimitInterval=60
+#StartLimitBurst=2
+ 
+[Install]
+WantedBy=local-fs.target
