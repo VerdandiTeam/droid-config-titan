@@ -1,11 +1,26 @@
-# Feel free to disable non-critical HA parts during devel by commenting out
-# Generated in hadk by executing: cd $ANDROID_ROOT; rpm/helpers/add_new_device.sh
+# Feel free to disable non-critical HA parts during devel by commenting lines out
+# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
 Description: Pattern with packages for titan configurations
 Name: jolla-configuration-titan
 Requires:
 - pattern:jolla-hw-adaptation-titan
-- pattern:jolla-configuration-sfe
+- pattern:jolla-sailfish-applications
+- pattern:jolla-ui-wayland
+# Early stages of porting benefit from these:
+- pattern:sailfish-porter-tools
+# Pre-installed applications, since we don't support OTA well enough:
+- sailfish-office
+- jolla-calculator
+- jolla-email
+- jolla-notes
+- jolla-clock
+- jolla-mediaplayer
+- jolla-calendar
+- sailfish-weather
+# Preinstalled warehouse and galaxy attack hd
+- harbour-warehouse
+- harbour-pgz-galaxy-attack-hd
 
 Summary: Jolla Configuration titan
 
