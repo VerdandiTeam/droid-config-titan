@@ -21,6 +21,9 @@ Requires:
 # Preinstalled warehouse and galaxy attack hd
 - harbour-warehouse
 - harbour-pgz-galaxy-attack-hd
+# sd-utils for mounting sdcard
+- sd-utils
+
 
 Summary: Jolla Configuration titan
 
