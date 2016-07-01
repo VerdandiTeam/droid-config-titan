@@ -1,7 +1,7 @@
-/etc/ohm/dbus_signal_conf.ini
 /etc/ohm/modules.ini
-/etc/ohm/ohmd.ini
+/etc/ohm/dbus_signal_conf.ini
 /etc/ohm/plugins.d/dbus_signal.ini
+/etc/ohm/ohmd.ini
 /etc/dbus-1/system.d/ohm-policy.conf
 /lib/systemd/system/multi-user.target.wants/ohmd-hack.service
 /lib/systemd/system/ohmd-hack.service

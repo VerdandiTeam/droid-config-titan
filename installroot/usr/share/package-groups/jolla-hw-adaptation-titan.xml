@@ -13,6 +13,7 @@
     <rpm:entry name="droid-hal-titan-img-boot"/>
     <rpm:entry name="droid-hal-titan-kernel"/>
     <rpm:entry name="droid-hal-titan-kernel-modules"/>
+    <rpm:entry name="droid-hal-titan-detritus"/>
     <rpm:entry name="droid-config-titan-sailfish"/>
     <rpm:entry name="droid-config-titan-pulseaudio-settings"/>
     <rpm:entry name="droid-config-titan-policy-settings"/>
@@ -44,7 +45,7 @@
     <rpm:entry name="jolla-settings-layout"/>
     <rpm:entry name="pattern:jolla-sailfish-cellular-apps"/>
     <rpm:entry name="telepathy-ring"/>
-    <rpm:entry name="geoclue-provider-hybris-community"/>
+    <rpm:entry name="geoclue-provider-hybris"/>
     <rpm:entry name="pulseaudio-modules-droid-glue"/>
   </rpm:requires>
 </pattern>
