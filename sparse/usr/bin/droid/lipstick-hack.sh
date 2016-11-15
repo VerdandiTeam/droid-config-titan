@@ -2,6 +2,11 @@
 
 # surfaceflinger needs to run for a bit, in order for sailfish graphics to work
 # very weird, proper solution needed
-/system/bin/surfaceflinger &
+rm /tmp/start_surfaceflinger
+LD_PRELOAD=/system/lib/libsurfaceflinger.so /system/bin/surfaceflinger &
+PID=$!
 sleep 5
-killall surfaceflinger
+kill -9 $PID
+sleep 5
+touch /tmp/start_surfaceflinger
+killall minisfservice

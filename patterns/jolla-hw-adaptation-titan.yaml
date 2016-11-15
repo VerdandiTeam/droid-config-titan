@@ -12,6 +12,7 @@ Requires:
 - droid-hal-titan-img-boot
 - droid-hal-titan-kernel
 - droid-hal-titan-kernel-modules
+- droid-hal-titan-detritus
 - droid-config-titan-sailfish
 - droid-config-titan-pulseaudio-settings
 - droid-config-titan-policy-settings
@@ -78,10 +79,20 @@ Requires:
 - telepathy-ring
 
 # to make the maps happy, works since 1.1.7
-- geoclue-provider-hybris-community
+- geoclue-provider-hybris
 
 # Fix for calls
 - pulseaudio-modules-droid-glue
+
+# Flashlight
+- jolla-settings-system-flashlight
+
+# Multi-SIM settings
+- jolla-settings-networking-multisim
+
+# For FM radio
+- qt5-qtmultimedia-plugin-mediaservice-irisradio
+- jolla-mediaplayer-radio
 
 Summary: Jolla HW Adaptation titan
 
