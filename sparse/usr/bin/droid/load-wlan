@@ -19,4 +19,4 @@ fi
 
 echo "Ready to load wlan after $i s wait"
 
-modprobe pronto_wlan
+modprobe wlan
