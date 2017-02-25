@@ -6,8 +6,6 @@
 %define vendor_pretty Motorola
 %define device_pretty Moto G (2nd Gen.)
 
-%define dcd_path ./
-
 # Adjust this for your device
 %define pixel_ratio 1.0
 

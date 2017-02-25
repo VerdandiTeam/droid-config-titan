@@ -4,9 +4,6 @@
 Description: Pattern with packages for titan HW Adaptation
 Name: jolla-hw-adaptation-titan
 Requires:
-- pattern:jolla-hw-adaptation-hybris
-- pattern:jolla-hw-adaptation-hybris-droid-vibrator
-- pattern:jolla-ui-configuration-titan
 
 - droid-hal-titan
 - droid-hal-titan-img-boot
@@ -19,6 +16,21 @@ Requires:
 - droid-config-titan-preinit-plugin
 - droid-hal-version-titan
 
+# Hybris packages
+- libhybris-libEGL
+- libhybris-libGLESv2
+- libhybris-libwayland-egl
+
+# Sensors
+- hybris-libsensorfw-qt5
+
+# Vibra
+- ngfd-plugin-droid-vibrator
+- qt5-feedback-haptics-droid-vibrator
+
+# Needed for /dev/touchscreen symlink
+- qt5-plugin-generic-evdev
+ 
 - pulseaudio-modules-droid
 
 # for audio recording to work:
@@ -56,7 +68,7 @@ Requires:
 # working but careful with roaming!
 - usb-moded-connection-sharing-android-config
 # android diag mode only usable for certain android tools
-- usb-moded-diag-mode-android
+#- usb-moded-diag-mode-android
 
 # jolla-rnd-device will enable usb-moded even when UI is not yet
 # brought up (useful during development, available since update10)
@@ -69,23 +81,17 @@ Requires:
 
 # enable device lock and allow to select untrusted software
 - jolla-devicelock-plugin-encsfa
-- jolla-settings-layout
 
-# Since 1.1.9 this needs to be added explicitly for cellular devices
-- pattern:jolla-sailfish-cellular-apps
-- telepathy-ring
-
-# to make the maps happy, works since 1.1.7
+# For GPS
 - geoclue-provider-hybris
+# For Mozilla location services (online)
+- geoclue-provider-mlsdb
 
 # Fix for calls
 - pulseaudio-modules-droid-glue
 
 # Flashlight
 - jolla-settings-system-flashlight
-
-# Multi-SIM settings
-- jolla-settings-networking-multisim
 
 # For FM radio
 - qt5-qtmultimedia-plugin-mediaservice-irisradio
