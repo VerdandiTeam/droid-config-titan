@@ -23,6 +23,8 @@
 
 .fail
 
+load-module module-udev-detect
+
 load-module module-droid-keepalive
 
 load-module module-meego-parameters cache=1 directory=/var/lib/nemo-pulseaudio-parameters use_voice=false
