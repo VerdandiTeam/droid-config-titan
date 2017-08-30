@@ -11,7 +11,6 @@ Requires:
 - pattern:jolla-sailfish-cellular-apps
 # Early stages of porting benefit from these:
 - pattern:sailfish-porter-tools
-<<<<<<< HEAD
 
 - sailfish-content-graphics-z@ICON_RES@
 
@@ -22,8 +21,19 @@ Requires:
 # 3rd party accounts like Twitter, VK, cloud services, etc
 - jolla-settings-accounts-extensions-3rd-party-all
 
-=======
->>>>>>> 0944e0575ff31159fb8a9c199edf80d76e79bd73
+# Jolla Store items
+- store-client
+- jolla-settings-accounts-extensions-jolla
+
+# Non-trusted app installation support
+- jolla-settings-system-sideloading
+
+# For Mozilla location services (online)
+- geoclue-provider-mlsdb
+
+# Sailfish OS CSD tool for hardware testing
+# needs some configuration to get all features working
+- csd
 # sd-utils for mounting sdcard
 - sd-utils
 
