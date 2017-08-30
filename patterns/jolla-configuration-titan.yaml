@@ -11,6 +11,7 @@ Requires:
 - pattern:jolla-sailfish-cellular-apps
 # Early stages of porting benefit from these:
 - pattern:sailfish-porter-tools
+<<<<<<< HEAD
 
 - sailfish-content-graphics-z@ICON_RES@
 
@@ -21,6 +22,8 @@ Requires:
 # 3rd party accounts like Twitter, VK, cloud services, etc
 - jolla-settings-accounts-extensions-3rd-party-all
 
+=======
+>>>>>>> 0944e0575ff31159fb8a9c199edf80d76e79bd73
 # sd-utils for mounting sdcard
 - sd-utils
 
