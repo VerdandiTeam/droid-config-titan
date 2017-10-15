@@ -22,8 +22,7 @@ Requires:
 - jolla-settings-accounts-extensions-3rd-party-all
 
 # Jolla Store items
-- store-client
-- jolla-settings-accounts-extensions-jolla
+- patterns-sailfish-consumer-generic
 
 # Non-trusted app installation support
 - jolla-settings-system-sideloading
@@ -36,6 +35,9 @@ Requires:
 - csd
 # sd-utils for mounting sdcard
 - sd-utils
+
+# For all keyboard layouts
+- jolla-keyboard-layout-all
 
 
 Summary: Jolla Configuration titan
