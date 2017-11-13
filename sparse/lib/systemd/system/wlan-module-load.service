@@ -9,6 +9,7 @@ Before=network.target wpa_supplicant.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
+ExecPreStart=sleep 1
 ExecStart=/usr/bin/droid/load-wlan
 ExecStop=/usr/bin/droid/unload-wlan
 
