@@ -83,8 +83,9 @@ Requires: jolla-devicelock-plugin-encsfa
 
 # For GPS
 Requires: geoclue-provider-hybris
-# For Mozilla location services (online)
-Requires: geoclue-provider-mlsdb
+
+# Telephony (RIL sockets)
+Requires: ofono-ril-plugin
 
 # Fix for calls
 Requires: pulseaudio-modules-droid-glue
