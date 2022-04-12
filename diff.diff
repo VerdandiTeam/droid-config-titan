@@ -1,0 +1,39 @@
+diff --git a/droid-configs-device b/droid-configs-device
+index 09ff38c..24a1884 160000
+--- a/droid-configs-device
++++ b/droid-configs-device
+@@ -1 +1 @@
+-Subproject commit 09ff38c52d411a469cc02d8e018660b1ea8836aa
++Subproject commit 24a1884bd22a303a79e8f0cebc9521fd512ac258
+diff --git a/patterns/jolla-configuration-titan.yaml b/patterns/jolla-configuration-titan.yaml
+deleted file mode 100644
+index df0131b..0000000
+--- a/patterns/jolla-configuration-titan.yaml
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Feel free to disable non-critical HA parts during devel by commenting lines out
+-# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
+-
+-Description: Pattern with packages for titan configurations
+-Name: jolla-configuration-titan
+-Requires:
+-- patterns-sailfish-device-configuration-titan
+-
+-Summary: Jolla Configuration titan
+-
+diff --git a/patterns/patterns-sailfish-device-adaptation-titan.inc b/patterns/patterns-sailfish-device-adaptation-titan.inc
+index 031cd13..98d2203 100644
+--- a/patterns/patterns-sailfish-device-adaptation-titan.inc
++++ b/patterns/patterns-sailfish-device-adaptation-titan.inc
+@@ -83,8 +83,9 @@ Requires: jolla-devicelock-plugin-encsfa
+ 
+ # For GPS
+ Requires: geoclue-provider-hybris
+-# For Mozilla location services (online)
+-Requires: geoclue-provider-mlsdb
++
++# Telephony (RIL sockets)
++Requires: ofono-ril-plugin
+ 
+ # Fix for calls
+ Requires: pulseaudio-modules-droid-glue
