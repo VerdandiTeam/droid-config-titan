@@ -11,7 +11,7 @@ Requires: droid-config-titan-pulseaudio-settings
 Requires: droid-config-titan-policy-settings
 Requires: droid-config-titan-preinit-plugin
 Requires: droid-config-titan-flashing
-Requires: droid-config-titan-bluez4
+Requires: droid-config-titan-bluez5
 Requires: droid-hal-version-titan
 
 # Hybris packages
