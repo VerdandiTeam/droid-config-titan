@@ -80,7 +80,7 @@ Requires: rfkill
 Requires: jolla-devicelock-plugin-encsfa
 
 # For GPS
-Requires: geoclue-provider-hybris
+Requires: geoclue-provider-hybris-hal
 
 # Telephony (RIL sockets)
 Requires: ofono-ril-plugin
