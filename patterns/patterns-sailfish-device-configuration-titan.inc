@@ -27,9 +27,6 @@ Requires: geoclue-provider-mlsdb
 # Sailfish OS CSD tool for hardware testing
 # needs some configuration to get all features working
 
-# sd-utils for mounting sdcard
-Requires: sd-utils
-
 # For all keyboard layouts
 Requires: jolla-keyboard-layout-all
 
