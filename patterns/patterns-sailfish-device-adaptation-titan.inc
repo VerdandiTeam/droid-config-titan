@@ -91,6 +91,7 @@ Requires: pulseaudio-modules-droid-glue
 
 # Flashlight
 Requires: jolla-settings-system-flashlight
+Requires: sysfs-flashlight
 
 # For FM radio
 Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
