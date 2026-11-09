@@ -31,3 +31,11 @@ BuildRequires: gcc
 %build
 # Built into sparse/ so the %%install copy from droid-configs.inc picks it up
 gcc %{optflags} -shared -fPIC -o sparse/usr/lib/libfpscr-ieee.so fpscr-ieee/fpscr-ieee.c
+
+# Gecko reads extra default prefs from its versioned GRE dir; relink on every
+# xulrunner update.
+%triggerin -- xulrunner-qt5
+for d in /usr/lib/xulrunner-qt5-*/; do
+  mkdir -p "$d/defaults/pref"
+  ln -sf %{_datadir}/droid-config-titan/gecko-prefs.js "$d/defaults/pref/droid-config-titan.js"
+done
