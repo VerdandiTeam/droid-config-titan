@@ -1,2 +1,5 @@
 [apps/jolla-settings]
 maskedSettings=''
+
+[desktop/jolla]
+reboot_action_enabled=true
