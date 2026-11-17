@@ -39,6 +39,9 @@ Recommends: sailfishos-chum-gui
 Recommends: punky  
 Recommends: verdandiupdater-sfos
 
+# Battery page
+Requires: verdanditeam-settings-battery
+
 %description -n patterns-sailfish-device-configuration-titan
 Pattern with packages for titan configurations
 
